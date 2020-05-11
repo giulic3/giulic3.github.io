@@ -1,6 +1,6 @@
 # Giulia's Dev Blog
 ## Getting started with the dev env
-(notes for me mainly)
+### Notes - for me mainly
 
 Prerequisites:
 * curl (wget)
@@ -59,6 +59,7 @@ And add the resolutions block:
     "moment": "2.24.0"  
   }
 
+Bonus: [MDX](https://www.gatsbyjs.org/docs/mdx/getting-started/), a cool plugin to use JSX inside Markdown (use `yarn add` instead of `npm install`).
 
 ## Folder Structure
 
