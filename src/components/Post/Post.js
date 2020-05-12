@@ -39,9 +39,6 @@ const Post = ({ post }: Props) => {
         <Comments postSlug={slug} postTitle={post.frontmatter.title} />
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <Contacts contacts={author.contacts} />
-      </div>
     </div>
   );
 };
