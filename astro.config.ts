@@ -5,8 +5,9 @@ import tailwind from "@astrojs/tailwind"
 import react from "@astrojs/react"
 
 // https://astro.build/config
+
 export default defineConfig({
-  site: "https://armand-salle.fr",
+  site: "https://giulic3.github.io",
   integrations: [mdx(), sitemap(), tailwind(), react()],
   output: "static",
   trailingSlash: "never",

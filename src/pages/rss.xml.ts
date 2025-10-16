@@ -7,21 +7,21 @@ export const GET: APIRoute = async ({ site }) => {
 
   return rss({
     // `<title>` field in output xml
-    title: "Armand Sallé's Blog",
+    title: "Giulia Cantini's Blog",
     // `<description>` field in output xml
     description: "Welcome to my blog!",
     // Pull in your project "site" from the endpoint context
     // https://docs.astro.build/en/reference/api-reference/#site
-    site: site || "https://armand-salle.fr",
+    site: site || "https://giulic3.github.io",
     trailingSlash: false,
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
     items: blogPosts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
-      url: `https://armand-salle.fr/post/${post.slug}`,
+      url: `https://giulic3.github.io/post/${post.slug}`,
       date: post.data.pubDate,
-      author: "Armand Sallé",
+      author: "Giulia Cantini",
       link: `/post/${post.slug}`,
       pubDate: new Date(post.data.pubDate),
     })),

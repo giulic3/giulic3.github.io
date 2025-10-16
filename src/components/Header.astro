@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets"
-import ArmandImage from "../assets/armand.jpeg"
+import PortraitImage from "../assets/portrait.png"
 import SocialLinks from "./SocialLinks.astro"
 import SectionTitle from "./SectionTitle.astro"
 import WorkTag from "./WorkTag.astro"
@@ -13,19 +13,19 @@ import Code from "./Code.astro"
       class="relative flex size-24 shrink-0 overflow-hidden rounded-full border border-white shadow-md shadow-slate-200"
     >
       <Image
-        alt="Armand"
+        alt="Portrait of Giulia Cantini"
         class="block aspect-square h-full w-full object-cover"
         loading="eager"
-        src={ArmandImage}
+        src={PortraitImage}
       />
     </div>
     <div class="space-y-1">
       <div>
         <h1 class="flex scroll-m-20 text-2xl font-semibold tracking-tight">
-          Armand Sallé
+          Giulia Cantini
         </h1>
         <div class="text-sm text-slate-500">
-          <p>Founding Product Engineer based in Angers, France.</p>
+          <p>Doctoral Researcher in computational biology based in Munich, Germany.</p>
         </div>
       </div>
       <WorkTag />
@@ -36,11 +36,11 @@ import Code from "./Code.astro"
     <div class="flex flex-col gap-4">
       <SectionTitle>About</SectionTitle>
       <p class="leading-7 text-slate-500">
-        I've been a front-end developer for 5 years, working mainly with React,
-        TypeScript, Next.js, and many others. Passionate about what I do, I get
-        fully involved in every project, with a particular focus on design.
+        I am completing a PhD in computational biology at Helmholtz Munich and
+        the Technical University of Munich (TUM). My research focuses on RNA biology and post-transcriptional gene regulation. 
+        More broadly, I am interested in data science, machine learning and bioinformatics.
       </p>
-      <p class="leading-7 text-slate-500">
+      <!-- <p class="leading-7 text-slate-500">
         My last position was at <a
           target="_blank"
           class="inline-flex items-center gap-1 rounded-sm underline underline-offset-2 outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2"
@@ -60,7 +60,7 @@ import Code from "./Code.astro"
         <Code>trpc</Code>
         <Code>drizzle</Code>
         <Code>vite</Code> and <Code>vitest</Code>.
-      </p>
+      </p> -->
 
       <SocialLinks />
     </div>
